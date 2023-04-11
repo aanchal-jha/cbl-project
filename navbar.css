@@ -1,0 +1,44 @@
+.items{  
+display: flex;
+margin:auto;
+padding:2px;
+height: 25px;
+background-color: rgb(177, 177, 231);
+justify-content:flex-start;
+cursor: pointer;
+list-style: none;
+
+
+}
+.items a:hover{
+
+color: blueviolet;
+}
+.items a:active{
+    
+    color: whitesmoke;
+    }
+#one{
+   display: flexbox;
+    padding: 2px;
+    margin:2px;
+    transition: 1s;
+}
+
+#two{
+    
+    display: flexbox;
+    padding: 2px;
+    margin:2px;
+}
+
+#three{
+   
+    display: flexbox;
+    padding: 2px;
+    margin:2px;
+}
+
+
+
+    

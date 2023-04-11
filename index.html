@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="cbl-project.css">
+    <link rel="stylesheet" href="modelling.css">
+    <link rel="stylesheet" href="validation.css">
+    <link rel="stylesheet" href="docking.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <title >CBL PROJECT</title>
+</head>
+
+<body>
+
+    <div class="navigation-bar">
+        <ul class="items">
+            <li id="one"><a href="index.html" target="blank">HOME</a></li>
+            <li id="two"><a id="ok" href="login.html" target="blank">LOGIN</a></li>
+            <li id="three"><a href="references.html" target="blank">REFERENCES</a></li>
+        </ul>
+        <!--<nav>
+            <a href="index.html" blank="target" id="one">Home</a>
+            <a href="login.html" blank="target" id="two">Login</a>
+            <a href="references.html" blank="target" id="three">References</a>
+        </nav>-->
+    </div>
+
+    <div class="cbl-project">
+        <div><img class="ip-logo" src="GGSIU_logo.png" alt=" " class="src"></div>
+        <div>
+            <h1 class="main-heading" style="font-size: 50px;">CBL PROJECT</h1>
+        </div>
+        <div><img class="lab-logo" src="lab.png" alt=" " class="src"></div>
+    </div>
+
+
+    <div class="modelling">
+        <p style="font-size: 25px;text-decoration: underline;display: flex;justify-content: center;">MODELLING/STRUCTURE
+            PREDICTION</p>
+        <div class="input" style="display: flex;justify-content: center;">
+            <!--  <h2 style="font-size: 15px;">Enter your PDB file</h2>
+            <label for="pdbFileInput">Choose a PDB file to upload:</label>
+            <input type="file" id="pdbFileInput" name="pdbFileInput"><br>
+            <button id="fileSubmit">SUBMIT</button> -->
+            <form>
+                <div class="model" style="display: flex;justify-content: center;">
+                    <input type="file" id="pdbFileInput" name="pdbFileInput"><br>
+                    <button type="submit" id="submitBtn" disabled>Submit</button>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="sequencing-options"><h2 style="font-size: 15px;"> Select </h2>
+    <input type="radio" name="12">Option 1<br>
+    <input type="radio" name="12">Option 2<br>
+    <input type="radio" name="12">Option 3<br>
+    <input type="radio" name="12">Option 4<br></div> -->
+
+    </div>
+
+
+
+    <div class="validation">
+        <p style="font-size: 25px;text-decoration: underline;display: flex;justify-content: center;">STRUCTURE
+            VALIDATION</p>
+        <div class="input" style="display: flex;justify-content: center;">
+            <!--<h2 style="font-size: 15px;">Enter your PDB file</h2>-->
+            <form>
+                <div class="valid" style="display: flex;justify-content: center;">
+                    <input type="file" id="pdbFileInput" name="pdbFileInput"><br>
+                    <button type="submit" id="submitBtn" disabled>Submit</button>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="validation-options"><h2 style="font-size: 15px;"> Select </h2>
+<input type="radio" name="12">Op 1 <br>
+<input type="radio" name="12">Option 2<br>
+<input type="radio" name="12">Option 3<br>
+<input type="radio" name="12">Option 4<br></div> -->
+    </div>
+
+
+    <div class="docking">
+        <p style="font-size: 25px;text-decoration: underline;display: flex;justify-content: center;">DOCKING</p>
+        <div class="input" style="display: flex;justify-content: center;">
+            <!--<h2 style="font-size: 15px;">Enter your PDB file</h2>-->
+            <form>
+                <div class="dock" style="display: flex;justify-content: center;">
+                    <input type="file" id="pdbFileInput" name="pdbFileInput"><br>
+                    <button type="submit" id="submitBtn" disabled>Submit</button>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="docking-options"><h2 style="font-size: 15px;"> Select </h2>
+<input type="radio" name="12">Swiss Dock <br>
+<input type="radio" name="12">C-TAB<br>
+<input type="radio" name="12">Z-TAB<br>
+<input type="radio" name="12">Patch Dock<br>
+<input type="radio" name="12">H-Dock<br>
+<input type="radio" name="12">CB-Dock<br>
+</div> -->
+    </div>
+
+    <div class="footer"></div>
+
+
+</body>
+<script src="index.js" src="modelling.js" src="docking.js" src="validation.css"></script>
+
+</html>

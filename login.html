@@ -1,0 +1,141 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css" class="css">
+    <title>Login</title>
+</head>
+<script>
+    function check() {
+
+         var e =document.getElementById("star");
+         var r=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+         var w=e.value;
+         if (r.test(w)) {
+           
+             alert("Enter your password");
+         } else {
+             var q=document.getElementById("oval");
+            
+             q.style.visibility="invisible";
+             alert("incorrect input");
+             
+         }
+ 
+         var f =document.getElementById("password");
+         var t=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+         var s=f.value;
+         if (t.test(s)) {
+           
+             alert("correct input");
+         } else {
+             var q=document.getElementById("oval");
+            
+             q.style.visibility="invisible";
+             alert("incorrect input");
+             
+         } 
+
+      const emailField = document.querySelector('#star');
+        const passwordField = document.querySelector('#password');
+
+        mail.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const email = emailField.value;
+            const password = passwordField.value;
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+            const isEmailValid = emailRegex.test(email);
+            const isPasswordValid = passwordRegex.test(password);
+
+            if (isEmailValid && isPasswordValid) {
+                submitButton.disabled = false;
+                alert("invalid credentials")
+            } else {
+                submitButton.disabled = true;
+                alert("submitted");
+            }
+        })
+
+    }
+
+
+
+
+
+
+</script>
+
+<body>
+    <div class="mail">
+        <input id="star" type="text" placeholder="Enter your E-mail ID">
+        <label id="oval" style="color:white;font-size: 24px;visibility:hidden " for="star">Invalid</label>
+        <input id="password" type="text" placeholder="Enter your password ">
+        <button onclick="check()">SUBMIT</button>
+    </div> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css" class="css">
+    <script src="https://kit.fontawesome.com/b4e8df59ed.js" crossorigin="anonymous"></script>
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field" id="namefield">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="E-mail">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <p>Forget password <a href="#">Click Here!</a></p>
+            </div>
+<div class="btn-field">
+    <button type="button" id="signupbtn">Sign Up</button>
+    <button type="button" id="signinbtn" class="disable">Sign In</button>
+</div>
+        </form>
+    </div>
+    <script>
+        let signupbtn=document.getElementById("signupbtn");
+        let signinbtn=document.getElementById("signinbtn");
+        let namefield=document.getElementById("namefield");
+        let title=document.getElementById("title");
+
+        signinbtn.onclick=function(){
+            namefield.style.maxHeight="0";
+            title.innerHTML="Sign In";
+            signupbtn.classList.add("disable");
+            signinbtn.classList.remove("disable");
+        }
+        signupbtn.onclick=function(){
+            namefield.style.maxHeight="60px";
+            title.innerHTML="Sign Up";
+            signupbtn.classList.remove("disable");
+            signinbtn.classList.add("disable");
+        }
+    </script>
+</body>
+</html>
+        
